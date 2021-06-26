@@ -5,7 +5,6 @@ import Card from './Card';
 import './ShowExpenses.css';
 
 const ExpenseItem = (props) => {
-    console.log(props.amount)
     
   return (
     <Card className='expense-item'>
