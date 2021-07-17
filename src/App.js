@@ -30,10 +30,19 @@ function App() {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES)
 
   const addExpenseHandler = newExpense => {
+    
     setExpenses( prevState => {
-      newExpense.id = expenses[expenses.length - 1].id + 1
+      console.log("Before")
+      console.log(prevState)
+      console.log(prevState.length)
+
+      newExpense.id = prevState.length + 1
       return [newExpense, ...prevState]
     })   
+
+    console.log("After")
+    console.log(newExpense)
+    
   }
 
   return (

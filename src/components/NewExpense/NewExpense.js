@@ -23,6 +23,7 @@ const NewExpense = (props) => {
   };
 
   const [renderedForm, setRenderedForm] = useState(<button type="button" onClick={AddExpenseHandler}>Add New Expense</button>)
+  //The better solution would have been to have created a toggleOpenForm function and to have a conditional in the html section
 
   return (
     <div className='new-expense'>
