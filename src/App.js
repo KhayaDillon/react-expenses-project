@@ -32,16 +32,9 @@ function App() {
   const addExpenseHandler = newExpense => {
     
     setExpenses( prevState => {
-      console.log("Before")
-      console.log(prevState)
-      console.log(prevState.length)
-
       newExpense.id = prevState.length + 1
       return [newExpense, ...prevState]
-    })   
-
-    console.log("After")
-    console.log(newExpense)
+    })  
     
   }
 
